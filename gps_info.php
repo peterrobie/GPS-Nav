@@ -96,7 +96,7 @@
 		</script>
 		
 		<!-- CSS Declarations -->
-		<link rel="stylesheet" href="gps.css" type="text/css" />
+		<link rel="stylesheet" href="./css/gps.css" type="text/css" />
 		<!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/cupertino/jquery-ui.css" type="text/css" /> -->
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/dark-hive/jquery-ui.css" type="text/css" />
 		<link rel="stylesheet" href="/test_bed/html5fu/assets/css/styles.css" />
