@@ -10,9 +10,9 @@
 		<script src="http://maps.google.com/maps/api/js?sensor=false"></script> <!-- For getting Google Maps -->
 		<script src="gps_js/gps.min.js"></script> <!-- Base GPS functions -->
 		<!-- Including the HTML5 Uploader plugin -->
-		<script src="/test_bed/html5fu/assets/js/jquery.filedrop.js"></script>
+		<script src="gps_js/jquery.filedrop.js"></script>
 		<!-- The main script file -->
-	    <script src="/test_bed/html5fu/assets/js/script.js"></script>
+	    <script src="gps_js/script.js"></script>
 	    <script src="gps_js/jquery.exif.js"></script>
 		<script type="text/javascript">
 			/* File listing */
@@ -99,7 +99,7 @@
 		<link rel="stylesheet" href="./css/gps.css" type="text/css" />
 		<!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/cupertino/jquery-ui.css" type="text/css" /> -->
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/dark-hive/jquery-ui.css" type="text/css" />
-		<link rel="stylesheet" href="/test_bed/html5fu/assets/css/styles.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	
 	<body>
