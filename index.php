@@ -102,7 +102,7 @@
 	
 		<div id="wrapper">
 			<header>
-				<a href="./index.php"><img id="logo" src="/images/photoNav_01.png" /></a>
+				<a href="./index.php"><img id="logo" src="./images/photoNav_01.png" /></a>
 				<div id="status"></div>
 			</header>
 
