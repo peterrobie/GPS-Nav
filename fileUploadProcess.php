@@ -21,7 +21,7 @@ if( isset($_FILES['gpsImage']) ) {
 					"imgUpload/" . $file["name"]);
 				echo "Stored in: " . "imgUpload/" . $file["name"];
 			}
-			header("location: gps_info.php");
+			header("location: index.php");
 		}
 	} else {
 		echo "Invalid file";

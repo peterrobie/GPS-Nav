@@ -7,3 +7,5 @@ taken at.</p>
 <p>There are a few things that need to be cleaned up further. For example the
 file uploads need work as does the UI.
 </p>
+
+<p>Notes: Make sure to set the imgUploads directory to writable: chmod 777 imgUpload</p>
