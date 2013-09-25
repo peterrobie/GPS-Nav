@@ -156,7 +156,7 @@
 					</div>
 						<div id="current_location">
 							<h3>Current Coordinates</h3>
-							<span id="latitude"></span>, <span id="longitude"></span> within: <span id="accuracy"></span> meters.						
+							<span id="latitude"></span>, <span id="longitude"></span> within: <span id="accuracy"></span> meters.
 						</div>
 					
 				</article>

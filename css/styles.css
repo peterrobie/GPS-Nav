@@ -18,7 +18,7 @@
 
 
 html{
-	background:url('../img/background_tile_2.jpg');
+	/* background:url('../img/background_tile_2.jpg'); */
 	min-height:100%;
 	position:relative;
 	
@@ -53,7 +53,7 @@ header, footer{
 
 
 header{
-	background:url('../img/background_tile_1.jpg'); 
+	/* background:url('../img/background_tile_1.jpg'); */
 	width: 800px;
 	height: 115px;
 	padding:0;
@@ -68,7 +68,7 @@ header:before,
 	content:'';
 	height:4px;
 	width:100%;
-	background:url('../img/blue_line.jpg');
+	/* background:url('../img/blue_line.jpg');*/
 	position: absolute;
 	top:0;
 	left:0;
@@ -93,7 +93,7 @@ h1{
 
 
 #dropbox{
-	background:url('../img/background_tile_3.jpg');
+	/* background:url('../img/background_tile_3.jpg'); */
 	
 	border-radius:3px;
 	position: relative;
@@ -160,7 +160,7 @@ h1{
 	left:0;
 	height:100%;
 	width:100%;
-	background: url('../img/done.png') no-repeat center center rgba(255,255,255,0.5);
+	/* background: url('../img/done.png') no-repeat center center rgba(255,255,255,0.5); */
 	display: none;
 }
 
@@ -241,7 +241,7 @@ footer h2{
 }
 
 footer a.tzine,a.tzine:visited{
-	background:url("../img/tzine.png") no-repeat right top;
+	/* background:url("../img/tzine.png") no-repeat right top; */
 	border:none;
 	text-decoration:none;
 	color:#FCFCFC;
