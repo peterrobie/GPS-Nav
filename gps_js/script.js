@@ -6,7 +6,6 @@ $(function(){
 	dropbox.filedrop({
 		// The name of the $_FILES entry:
 		paramname:'pic',
-		
 		maxfiles: 5,
     	maxfilesize: 2,
 		url: './post_file.php',
@@ -41,16 +40,11 @@ $(function(){
 				// file to be rejected
 				return false;
 			}
-		},
-		
-		uploadStarted:function(i, file, len){
+		}, uploadStarted:function(i, file, len){
 			createImage(file);
-		},
-		
-		progressUpdated: function(i, file, progress) {
+		}, progressUpdated: function(i, file, progress) {
 			$.data(file).find('.progress').width(progress);
 		}
-    	 
 	});
 	
 	var template = '<div class="preview">'+
@@ -66,32 +60,26 @@ $(function(){
 	
 	function createImage(file){
 
-		var preview = $(template), 
-			image = $('img', preview);
-			
+		var preview = $(template), image = $('img', preview);
 		var reader = new FileReader();
-		
+
 		image.width = 100;
 		image.height = 100;
 		
 		reader.onload = function(e){
-			
 			// e.target.result holds the DataURL which
 			// can be used as a source of the image:
-			
 			image.attr('src',e.target.result);
 		};
 		
 		// Reading the file as a DataURL. When finished,
 		// this will trigger the onload function above:
 		reader.readAsDataURL(file);
-		
 		message.hide();
 		preview.appendTo(dropbox);
 		
 		// Associating a preview container
 		// with the file, using jQuery's $.data():
-		
 		$.data(file,preview);
 	}
 

@@ -165,6 +165,16 @@
 			
 			<section>
 				<article>
+					<div id="dropbox" class="dropbox rnd5">
+						<span class="message" style="font-size:1.5em;">Drop images here to upload. </span><br />
+						<span class="message"><i>(they will only be visible to you)</i></span>
+					</div>
+					<div class="message"></div>
+				</article>
+			</section>
+			<br style="clear: both;" />
+			<section>
+				<article>
 					<form id="submitGPSImage" action="fileUploadProcess.php" method="post" enctype="multipart/form-data">
 						<label for="gpsImage">Filename:</label>
 						<input type="file" name="gpsImage" id="gpsImage" class="" /> 
@@ -173,19 +183,6 @@
 				</article>
 			</section>
 			
-			<br style="clear: both;" />
-			
-			<section>
-				<article>
-
-					<div id="dropbox">
-						<span class="message">Drop images here to upload. <br /><i>(they will only be visible to you)</i></span>
-					</div>
-
-					<div class="message"></div>
-				</article>
-			</section>
-
 		</div>
 		
 		<footer>
