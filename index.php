@@ -12,7 +12,6 @@
 	    <script src="gps_js/script.js"></script><!-- The main script file -->
 	    <script src="gps_js/jquery.exif.js"></script>
 		<script type="text/javascript">
-			/* File listing */
 
 			$(document).ready(function(){
 
@@ -168,8 +167,8 @@
 				<article>
 					<form id="submitGPSImage" action="fileUploadProcess.php" method="post" enctype="multipart/form-data">
 						<label for="gpsImage">Filename:</label>
-						<input type="file" name="gpsImage" id="gpsImage" /> 
-						<input id="submit" type="submit" name="submit" value="submit" />
+						<input type="file" name="gpsImage" id="gpsImage" class="" /> 
+						<input id="submit" type="submit" name="submit" value="Upload your image" class="button wht rnd5 green" />
 					</form>
 				</article>
 			</section>
