@@ -7,27 +7,16 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script> <!-- Base jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7/jquery-ui.min.js"></script> <!-- jQuery UI -->
 		<script src="http://maps.google.com/maps/api/js?sensor=false"></script> <!-- For getting Google Maps -->
-		<script src="gps_js/gps.min.js"></script> <!-- Base GPS functions -->
+		<!-- <script src="gps_js/gps.min.js"></script>  Base GPS functions -->
+		<script src="gps_js/gps_global.js"></script> <!-- Base GPS functions -->
 		<script src="gps_js/jquery.filedrop.js"></script><!-- Including the HTML5 Uploader plugin -->
 	    <script src="gps_js/script.js"></script><!-- The main script file -->
 	    <script src="gps_js/jquery.exif.js"></script>
 		<script type="text/javascript">
 
 			$(document).ready(function(){
-
-				/*
-				$.ajax({
-					type: "GET",
-					url:"gps_image_list.php",
-					timeout: 3000,
-					success:function(result){
-				    	img_result = $("#image_list").html(result);
-				    }
-				});
-				*/
 				
 				$('.img').live("click", function(){
-						// console.log('it works...');
 						
 						var longitude = $(this).exif("GPSLongitude");
 						var latitude = $(this).exif("GPSLatitude");
@@ -52,10 +41,10 @@
 							a2[0] = -a2[0];
 						}
 					    
-					    // Log all of out exif data
+					    // Log all of out exif data for our location from geotagging.
 					     console.log($(this).exifPretty());
 					    
-					    /* Populate the fields with the correct data */
+					    // Populate the fields with the correct data 
 					    // Latitude
 					    var LatDegrees = parseInt(a2[0]);
 					    var LatMinutes = parseInt(a2[1]);
@@ -92,6 +81,7 @@
 		</script>
 		
 		<!-- CSS Declarations -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,400,900' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="./css/gps.css" type="text/css" />
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/dark-hive/jquery-ui.css" type="text/css" />
 		<link rel="stylesheet" href="./css/styles.css" />
@@ -178,7 +168,7 @@
 					<form id="submitGPSImage" action="fileUploadProcess.php" method="post" enctype="multipart/form-data">
 						<label for="gpsImage">Filename:</label>
 						<input type="file" name="gpsImage" id="gpsImage" class="" /> 
-						<input id="submit" type="submit" name="submit" value="Upload your image" class="button wht rnd5 green" />
+						<input id="submit" type="submit" name="submit" value="Upload your image" class="button wht rnd5 green" style="float:right;" />
 					</form>
 				</article>
 			</section>
@@ -189,7 +179,7 @@
 			<h3>Image GPS Extraction</h3>
 			<h5>
 				Written by: Peter Robie<br/>
-				March, 2012
+				Copyright Peter Robie &copy; 2012
 			</h5>
 			<span id="status"></span>
 		</footer>

@@ -1,6 +1,8 @@
 body { 
-	background: #0D151F;
-	font: 10pt halvetica, arial; 
+	background: #131920;
+	font-family:'Lato', halvetica, arial;
+	font-size: 12pt;
+	font-weight: 400;
 	color: #fff;
 	line-height: 1.25em;
 	margin: 0; 
@@ -15,12 +17,12 @@ img#logo {margin: 20px;}
 .img {width: 100%;}
 .img_container { background: #000; float: left; border: 5px solid black; height: 220px; width: 360px; overflow: hidden; margin: 20px 10px;}
 
-/* header { width: 580px;} */
-
 /* Status - title message */
 h3 { /* margin: 0 10px; */ padding-top: 10px; }
 h5 { margin: 0 10px; padding-top: 5px; }
 
+unit {float:left;}
+unitRt {float:right;}
 
 /* Current Location */
 div#current_location { position: absolute; top: 4px; width: 400px; height: auto; margin-left: 364px; padding: 0 10px 20px 20px; background: #333; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; }

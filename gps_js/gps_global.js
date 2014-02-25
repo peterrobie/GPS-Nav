@@ -114,8 +114,9 @@ function loadGeoData()
 
 function updateLocation(position) {
 	geoLatitude = position.coords.latitude;
+	geoLatitude = geoLatitude.toFixed(3)
 	geoLongitude = position.coords.longitude;
-	
+	geoLongitude = geoLongitude.toFixed(3);
 	geoAccuracy = position.coords.accuracy;
 	altitude = position.coords.altitude;
 		
